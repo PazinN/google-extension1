@@ -1,0 +1,92 @@
+<html>
+<head>
+<link rel="icon" type="image/x-icon" href="favicon.png">
+<style>
+*{
+margin:0;
+padding:10px;
+font-family:arial;
+}
+
+body{
+background-image:url('poz.png');
+background-color:#fff1e6;
+
+}
+
+div{
+min-width:400px;
+}
+
+
+button{
+background-color:#036666;
+color:#fff;
+font-size:20px;
+border:none;
+margin:5px 0;
+display:inline-block;
+border-radius:5px;
+}
+
+button:hover{
+transform:scale(1.01);
+transition:0.2s ease-in-out all;
+background-color:#3a5a40;
+}
+
+input{
+font-size:20px;
+width:300px;
+border:2px #036666 solid;
+width:100%;
+padding:10px 20px;
+box-sizing:border-box;
+}
+
+
+li{
+list-style: none;
+padding:0 ;
+margin-bottom:0.3em;
+}
+ul{
+padding:0;
+margin-top:2em;
+}
+a{
+color:#036666;
+padding:0;
+
+}
+
+.flex{
+padding:0;
+display:grid;
+column-gap:5px;
+grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+</style>
+</head>
+<body>
+
+<div>
+<input type='text' id='input-el' placeholder='URL'>
+<div class='flex'>
+<button id='button-el'>Input</button>
+<button id='delete-el'>Obrisis</button>
+<button id='save-el'>Stranica</button>
+</div>
+<ul id='ul-el'>
+
+
+
+
+</ul>
+</div>
+
+<script src='script.js'></script>
+</body>
+</html>

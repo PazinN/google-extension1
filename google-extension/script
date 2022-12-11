@@ -1,0 +1,32 @@
+let nizAdresa=[];
+const adresa = document.getElementById('input-el');
+let ispis = document.getElementById('ul-el');
+let sacuvajUnos= document.querySelector('#button-el');
+
+sacuvajUnos.addEventListener('click',function (){
+if(adresa.value==''){
+
+}
+else {
+nizAdresa.push(adresa.value);
+adresa.value='';
+console.log(nizAdresa);
+renderAplikacije()}
+});
+
+function renderAplikacije() {
+let i;
+let sadrzaj='';
+for(i=0;i< nizAdresa.length; i++){
+sadrzaj  = `
+<li> 
+
+	<a href='${nizAdresa[i]} ' target='_blank' >
+
+	${nizAdresa[i]} 
+	
+
+	</a>`
+}
+ispis.innerHTML+=sadrzaj;
+}
